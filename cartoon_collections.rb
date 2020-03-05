@@ -19,7 +19,7 @@ def long_planeteer_calls(array)
   array.any? { |str| str.size > 4 }
 end
 
-def find_the_cheese(array, chz)
+def find_the_cheese(array)
 
   cheese_types = chz
   array.detect do |ele| 

@@ -20,12 +20,9 @@ def long_planeteer_calls(array)
 end
 
 def find_the_cheese(array, chz)
-  # the array below is here to help
-  chz = cheese_types = ["cheddar", "gouda", "camembert"]
+
+  chz = cheese_types
   array.detect do |ele| 
-  if ele == "cheddar" || ele == "gouda" || ele == "camembert" 
-  print ele
+  chz.include?(ele)
   end
-  return ele
-end
 end

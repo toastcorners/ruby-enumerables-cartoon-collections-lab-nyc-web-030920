@@ -21,7 +21,7 @@ end
 
 def find_the_cheese(array, chz)
 
-  chz = cheese_types
+  cheese_types = chz
   array.detect do |ele| 
   chz.include?(ele)
   end

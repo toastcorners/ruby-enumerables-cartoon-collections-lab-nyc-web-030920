@@ -19,11 +19,10 @@ def long_planeteer_calls(array)
   array.any? { |str| str.size > 4 }
 end
 
-def find_the_cheese(array)
+def find_the_cheese(array, chz)
   # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  new = []
-  array.each do |ele| 
+  chz = cheese_types = ["cheddar", "gouda", "camembert"]
+  array.detect do |ele| 
   if ele == "cheddar" || ele == "gouda" || ele == "camembert" 
   print ele
   end
